@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/0xLeif/AppState/",
       "state" : {
-        "revision" : "2314fb2508aa28f07e0c22d98d0a76eb72e3b589",
-        "version" : "0.1.0"
+        "revision" : "ecdef90a804b1ce8535a59fe6f95ae1171f8b3f7",
+        "version" : "0.2.0"
       }
     },
     {

@@ -1,11 +1,12 @@
 import AppState
+import SwiftUI
 
 extension Application {
     var username: State<String> {
         state(initial: "Leif")
     }
 
-    var isLoggedIn: State<Bool> {
+    var isShowingSheet: State<Bool> {
         state(initial: false)
     }
 }
