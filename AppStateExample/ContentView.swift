@@ -21,6 +21,9 @@ class ContentViewModel: ObservableObject {
 struct ContentView: View {
     @ObservedObject private var viewModel = ContentViewModel()
 
+//    @AppState(\.isLoggedIn) var isLoggedIn: Bool
+//    @AppState(\.username) var username: String
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -30,19 +33,22 @@ struct ContentView: View {
             Text("Hello, \(viewModel.username)")
 
             Button("New") {
-                viewModel.updateName()
+                viewModel.username = "!!!"
             }
             
             Button("Log In", action: { viewModel.isLoggedIn = true })
         }
         .padding()
-        .sheet(isPresented: $viewModel.isLoggedIn, content: InnerView.init)
+        .sheet(isPresented: $viewModel.isLoggedIn, content: {
+
+            InnerView(username: $viewModel.username)
+        })
     }
 }
 
 struct InnerView: View {
-    @AppState(\.username) private var username: String
-    
+    @Binding var username: String
+
     var body: some View {
         Text("[\(username)]")
             .onTapGesture {

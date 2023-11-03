@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		295B80AF2AF29EA9006B7B4C /* AppStateExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B80AE2AF29EA9006B7B4C /* AppStateExampleTests.swift */; };
 		295B80C92AF29EC3006B7B4C /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 295B80C82AF29EC3006B7B4C /* AppState */; };
 		295B80CB2AF2A112006B7B4C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B80CA2AF2A112006B7B4C /* AppState.swift */; };
+		2974EF602AF4A57B0068AE4C /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 2974EF5F2AF4A57B0068AE4C /* AppState */; };
 		29B0326C2AF2E3200077D85C /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0326B2AF2E3200077D85C /* AppDependencies.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2974EF602AF4A57B0068AE4C /* AppState in Frameworks */,
 				295B80C92AF29EC3006B7B4C /* AppState in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +125,7 @@
 			name = AppStateExample;
 			packageProductDependencies = (
 				295B80C82AF29EC3006B7B4C /* AppState */,
+				2974EF5F2AF4A57B0068AE4C /* AppState */,
 			);
 			productName = AppStateExample;
 			productReference = 295B809A2AF29EA8006B7B4C /* AppStateExample.app */;
@@ -175,7 +178,7 @@
 			);
 			mainGroup = 295B80912AF29EA8006B7B4C;
 			packageReferences = (
-				295B80C72AF29EC3006B7B4C /* XCLocalSwiftPackageReference "../AppState" */,
+				2974EF5E2AF4A57B0068AE4C /* XCRemoteSwiftPackageReference "AppState" */,
 			);
 			productRefGroup = 295B809B2AF29EA8006B7B4C /* Products */;
 			projectDirPath = "";
@@ -482,16 +485,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		295B80C72AF29EC3006B7B4C /* XCLocalSwiftPackageReference "../AppState" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../AppState;
+/* Begin XCRemoteSwiftPackageReference section */
+		2974EF5E2AF4A57B0068AE4C /* XCRemoteSwiftPackageReference "AppState" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/AppState/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		295B80C82AF29EC3006B7B4C /* AppState */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = AppState;
+		};
+		2974EF5F2AF4A57B0068AE4C /* AppState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2974EF5E2AF4A57B0068AE4C /* XCRemoteSwiftPackageReference "AppState" */;
 			productName = AppState;
 		};
 /* End XCSwiftPackageProductDependency section */
