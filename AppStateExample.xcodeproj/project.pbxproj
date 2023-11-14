@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		292826252AF5A6B600A3E1C6 /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 292826242AF5A6B600A3E1C6 /* AppState */; };
 		295B809E2AF29EA8006B7B4C /* AppStateExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B809D2AF29EA8006B7B4C /* AppStateExampleApp.swift */; };
 		295B80A22AF29EA9006B7B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295B80A12AF29EA9006B7B4C /* Assets.xcassets */; };
 		295B80A52AF29EA9006B7B4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295B80A42AF29EA9006B7B4C /* Preview Assets.xcassets */; };
 		295B80AF2AF29EA9006B7B4C /* AppStateExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B80AE2AF29EA9006B7B4C /* AppStateExampleTests.swift */; };
 		295B80C92AF29EC3006B7B4C /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 295B80C82AF29EC3006B7B4C /* AppState */; };
 		295B80CB2AF2A112006B7B4C /* BasicAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B80CA2AF2A112006B7B4C /* BasicAppState.swift */; };
+		297973222AF6EFEF00275E7B /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 297973212AF6EFEF00275E7B /* AppState */; };
 		29B0326C2AF2E3200077D85C /* BasicAppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0326B2AF2E3200077D85C /* BasicAppDependency.swift */; };
 		29D22EE52AF53C87000A275A /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EE42AF53C87000A275A /* Example.swift */; };
 		29D22EE72AF544C4000A275A /* BasicViewModelAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EE62AF544C4000A275A /* BasicViewModelAppState.swift */; };
@@ -24,6 +24,7 @@
 		29D22EF62AF569A3000A275A /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EF52AF569A3000A275A /* ApplicationState.swift */; };
 		29D22EF82AF56D26000A275A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EF72AF56D26000A275A /* AppState.swift */; };
 		29D22EFB2AF578AC000A275A /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 29D22EFA2AF578AC000A275A /* AppState */; };
+		29E96CD02AF9AA54006136E0 /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 29E96CCF2AF9AA54006136E0 /* AppState */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292826252AF5A6B600A3E1C6 /* AppState in Frameworks */,
+				297973222AF6EFEF00275E7B /* AppState in Frameworks */,
 				29D22EFB2AF578AC000A275A /* AppState in Frameworks */,
+				29E96CD02AF9AA54006136E0 /* AppState in Frameworks */,
 				295B80C92AF29EC3006B7B4C /* AppState in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +207,8 @@
 			packageProductDependencies = (
 				295B80C82AF29EC3006B7B4C /* AppState */,
 				29D22EFA2AF578AC000A275A /* AppState */,
-				292826242AF5A6B600A3E1C6 /* AppState */,
+				297973212AF6EFEF00275E7B /* AppState */,
+				29E96CCF2AF9AA54006136E0 /* AppState */,
 			);
 			productName = AppStateExample;
 			productReference = 295B809A2AF29EA8006B7B4C /* AppStateExample.app */;
@@ -258,7 +261,7 @@
 			);
 			mainGroup = 295B80912AF29EA8006B7B4C;
 			packageReferences = (
-				292826232AF5A6B600A3E1C6 /* XCRemoteSwiftPackageReference "AppState" */,
+				29E96CCE2AF9AA54006136E0 /* XCRemoteSwiftPackageReference "AppState" */,
 			);
 			productRefGroup = 295B809B2AF29EA8006B7B4C /* Products */;
 			projectDirPath = "";
@@ -573,28 +576,32 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		292826232AF5A6B600A3E1C6 /* XCRemoteSwiftPackageReference "AppState" */ = {
+		29E96CCE2AF9AA54006136E0 /* XCRemoteSwiftPackageReference "AppState" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0xLeif/AppState/";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.0;
+				branch = leif/changes;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		292826242AF5A6B600A3E1C6 /* AppState */ = {
+		295B80C82AF29EC3006B7B4C /* AppState */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 292826232AF5A6B600A3E1C6 /* XCRemoteSwiftPackageReference "AppState" */;
 			productName = AppState;
 		};
-		295B80C82AF29EC3006B7B4C /* AppState */ = {
+		297973212AF6EFEF00275E7B /* AppState */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppState;
 		};
 		29D22EFA2AF578AC000A275A /* AppState */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = AppState;
+		};
+		29E96CCF2AF9AA54006136E0 /* AppState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29E96CCE2AF9AA54006136E0 /* XCRemoteSwiftPackageReference "AppState" */;
 			productName = AppState;
 		};
 /* End XCSwiftPackageProductDependency section */

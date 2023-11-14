@@ -12,6 +12,10 @@ import SwiftUI
 struct AppStateExampleApp: App {
     @ObservedObject private var userSettings = Application.dependency(\.userSettings)
 
+    init() {
+        Application.logging(isEnabled: true)
+    }
+
     var body: some Scene {
         WindowGroup {
             NavigationStack {
