@@ -580,8 +580,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0xLeif/AppState/";
 			requirement = {
-				branch = leif/changes;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
