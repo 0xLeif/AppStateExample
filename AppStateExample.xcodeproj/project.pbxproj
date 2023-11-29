@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294A62102B17C0CF005C1E6C /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 294A620F2B17C0CF005C1E6C /* AppState */; };
 		295B809E2AF29EA8006B7B4C /* AppStateExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B809D2AF29EA8006B7B4C /* AppStateExampleApp.swift */; };
 		295B80A22AF29EA9006B7B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295B80A12AF29EA9006B7B4C /* Assets.xcassets */; };
 		295B80A52AF29EA9006B7B4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295B80A42AF29EA9006B7B4C /* Preview Assets.xcassets */; };
-		295B80AF2AF29EA9006B7B4C /* AppStateExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B80AE2AF29EA9006B7B4C /* AppStateExampleTests.swift */; };
 		295B80C92AF29EC3006B7B4C /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 295B80C82AF29EC3006B7B4C /* AppState */; };
 		295B80CB2AF2A112006B7B4C /* BasicAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B80CA2AF2A112006B7B4C /* BasicAppState.swift */; };
 		297973222AF6EFEF00275E7B /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 297973212AF6EFEF00275E7B /* AppState */; };
 		29B0326C2AF2E3200077D85C /* BasicAppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0326B2AF2E3200077D85C /* BasicAppDependency.swift */; };
+		29B66C222B1806AF001806FC /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 29B66C212B1806AF001806FC /* AppState */; };
 		29D22EE52AF53C87000A275A /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EE42AF53C87000A275A /* Example.swift */; };
 		29D22EE72AF544C4000A275A /* BasicViewModelAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EE62AF544C4000A275A /* BasicViewModelAppState.swift */; };
 		29D22EE92AF544E0000A275A /* BasicAppState+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EE82AF544E0000A275A /* BasicAppState+State.swift */; };
@@ -24,26 +25,14 @@
 		29D22EF62AF569A3000A275A /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EF52AF569A3000A275A /* ApplicationState.swift */; };
 		29D22EF82AF56D26000A275A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D22EF72AF56D26000A275A /* AppState.swift */; };
 		29D22EFB2AF578AC000A275A /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 29D22EFA2AF578AC000A275A /* AppState */; };
-		29E96CD02AF9AA54006136E0 /* AppState in Frameworks */ = {isa = PBXBuildFile; productRef = 29E96CCF2AF9AA54006136E0 /* AppState */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		295B80AB2AF29EA9006B7B4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 295B80922AF29EA8006B7B4C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 295B80992AF29EA8006B7B4C;
-			remoteInfo = AppStateExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		294A620D2B17921B005C1E6C /* AppStateExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppStateExample.entitlements; sourceTree = "<group>"; };
 		295B809A2AF29EA8006B7B4C /* AppStateExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStateExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		295B809D2AF29EA8006B7B4C /* AppStateExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateExampleApp.swift; sourceTree = "<group>"; };
 		295B80A12AF29EA9006B7B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		295B80A42AF29EA9006B7B4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		295B80AA2AF29EA9006B7B4C /* AppStateExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStateExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		295B80AE2AF29EA9006B7B4C /* AppStateExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateExampleTests.swift; sourceTree = "<group>"; };
 		295B80CA2AF2A112006B7B4C /* BasicAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAppState.swift; sourceTree = "<group>"; };
 		29B0326B2AF2E3200077D85C /* BasicAppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAppDependency.swift; sourceTree = "<group>"; };
 		29D22EE42AF53C87000A275A /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
@@ -63,15 +52,9 @@
 			files = (
 				297973222AF6EFEF00275E7B /* AppState in Frameworks */,
 				29D22EFB2AF578AC000A275A /* AppState in Frameworks */,
-				29E96CD02AF9AA54006136E0 /* AppState in Frameworks */,
+				29B66C222B1806AF001806FC /* AppState in Frameworks */,
+				294A62102B17C0CF005C1E6C /* AppState in Frameworks */,
 				295B80C92AF29EC3006B7B4C /* AppState in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		295B80A72AF29EA9006B7B4C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				295B809C2AF29EA8006B7B4C /* AppStateExample */,
-				295B80AD2AF29EA9006B7B4C /* AppStateExampleTests */,
 				295B809B2AF29EA8006B7B4C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				295B809A2AF29EA8006B7B4C /* AppStateExample.app */,
-				295B80AA2AF29EA9006B7B4C /* AppStateExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +80,7 @@
 		295B809C2AF29EA8006B7B4C /* AppStateExample */ = {
 			isa = PBXGroup;
 			children = (
+				294A620D2B17921B005C1E6C /* AppStateExample.entitlements */,
 				29D22EF22AF54DD5000A275A /* Helpers */,
 				29D22EEF2AF54D73000A275A /* AppState */,
 				29D22EEE2AF54D6C000A275A /* Advanced */,
@@ -116,14 +98,6 @@
 				295B80A42AF29EA9006B7B4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		295B80AD2AF29EA9006B7B4C /* AppStateExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				295B80AE2AF29EA9006B7B4C /* AppStateExampleTests.swift */,
-			);
-			path = AppStateExampleTests;
 			sourceTree = "<group>";
 		};
 		29D22EE22AF53795000A275A /* BasicAppState */ = {
@@ -208,29 +182,12 @@
 				295B80C82AF29EC3006B7B4C /* AppState */,
 				29D22EFA2AF578AC000A275A /* AppState */,
 				297973212AF6EFEF00275E7B /* AppState */,
-				29E96CCF2AF9AA54006136E0 /* AppState */,
+				294A620F2B17C0CF005C1E6C /* AppState */,
+				29B66C212B1806AF001806FC /* AppState */,
 			);
 			productName = AppStateExample;
 			productReference = 295B809A2AF29EA8006B7B4C /* AppStateExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		295B80A92AF29EA9006B7B4C /* AppStateExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 295B80C12AF29EA9006B7B4C /* Build configuration list for PBXNativeTarget "AppStateExampleTests" */;
-			buildPhases = (
-				295B80A62AF29EA9006B7B4C /* Sources */,
-				295B80A72AF29EA9006B7B4C /* Frameworks */,
-				295B80A82AF29EA9006B7B4C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				295B80AC2AF29EA9006B7B4C /* PBXTargetDependency */,
-			);
-			name = AppStateExampleTests;
-			productName = AppStateExampleTests;
-			productReference = 295B80AA2AF29EA9006B7B4C /* AppStateExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -245,10 +202,6 @@
 					295B80992AF29EA8006B7B4C = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
-					295B80A92AF29EA9006B7B4C = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 295B80992AF29EA8006B7B4C;
-					};
 				};
 			};
 			buildConfigurationList = 295B80952AF29EA8006B7B4C /* Build configuration list for PBXProject "AppStateExample" */;
@@ -261,14 +214,13 @@
 			);
 			mainGroup = 295B80912AF29EA8006B7B4C;
 			packageReferences = (
-				29E96CCE2AF9AA54006136E0 /* XCRemoteSwiftPackageReference "AppState" */,
+				29B66C202B1806AF001806FC /* XCRemoteSwiftPackageReference "AppState" */,
 			);
 			productRefGroup = 295B809B2AF29EA8006B7B4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				295B80992AF29EA8006B7B4C /* AppStateExample */,
-				295B80A92AF29EA9006B7B4C /* AppStateExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,13 +232,6 @@
 			files = (
 				295B80A52AF29EA9006B7B4C /* Preview Assets.xcassets in Resources */,
 				295B80A22AF29EA9006B7B4C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		295B80A82AF29EA9006B7B4C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,23 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		295B80A62AF29EA9006B7B4C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				295B80AF2AF29EA9006B7B4C /* AppStateExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		295B80AC2AF29EA9006B7B4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 295B80992AF29EA8006B7B4C /* AppStateExample */;
-			targetProxy = 295B80AB2AF29EA9006B7B4C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		295B80BC2AF29EA9006B7B4C /* Debug */ = {
@@ -454,9 +383,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppStateExample/AppStateExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppStateExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 8M8SAX62V2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -482,9 +413,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppStateExample/AppStateExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppStateExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 8M8SAX62V2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -502,44 +435,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		295B80C22AF29EA9006B7B4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = oxl.AppStateExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppStateExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppStateExample";
-			};
-			name = Debug;
-		};
-		295B80C32AF29EA9006B7B4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = oxl.AppStateExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppStateExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppStateExample";
 			};
 			name = Release;
 		};
@@ -564,29 +459,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		295B80C12AF29EA9006B7B4C /* Build configuration list for PBXNativeTarget "AppStateExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				295B80C22AF29EA9006B7B4C /* Debug */,
-				295B80C32AF29EA9006B7B4C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		29E96CCE2AF9AA54006136E0 /* XCRemoteSwiftPackageReference "AppState" */ = {
+		29B66C202B1806AF001806FC /* XCRemoteSwiftPackageReference "AppState" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0xLeif/AppState/";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		294A620F2B17C0CF005C1E6C /* AppState */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppState;
+		};
 		295B80C82AF29EC3006B7B4C /* AppState */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppState;
@@ -595,13 +485,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppState;
 		};
-		29D22EFA2AF578AC000A275A /* AppState */ = {
+		29B66C212B1806AF001806FC /* AppState */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 29B66C202B1806AF001806FC /* XCRemoteSwiftPackageReference "AppState" */;
 			productName = AppState;
 		};
-		29E96CCF2AF9AA54006136E0 /* AppState */ = {
+		29D22EFA2AF578AC000A275A /* AppState */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 29E96CCE2AF9AA54006136E0 /* XCRemoteSwiftPackageReference "AppState" */;
 			productName = AppState;
 		};
 /* End XCSwiftPackageProductDependency section */

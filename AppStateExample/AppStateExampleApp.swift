@@ -8,12 +8,29 @@
 import AppState
 import SwiftUI
 
+extension Application {
+    var userSettings: Dependency<UserSettings> {
+        dependency(UserSettings())
+    }
+}
+
+class CustomApplication: Application {
+    override func didChangeExternally(notification: Notification) {
+        super.didChangeExternally(notification: notification)
+
+        DispatchQueue.main.async {
+            Application.dependency(\.userSettings).objectWillChange.send()
+        }
+    }
+}
+
 @main
 struct AppStateExampleApp: App {
     @ObservedObject private var userSettings = Application.dependency(\.userSettings)
 
     init() {
-        Application.logging(isEnabled: true)
+        Application.promote(to: CustomApplication.self)
+            .logging(isEnabled: true)
     }
 
     var body: some Scene {

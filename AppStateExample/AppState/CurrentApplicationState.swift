@@ -3,7 +3,7 @@ import SwiftUI
 
 struct CurrentApplicationState: View {
     @AppState(\.username) private var username
-    @StoredState(\.theme) private var theme
+    @SyncState(\.theme) private var theme
 
     var body: some View {
         Text("username: \(username)")

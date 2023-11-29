@@ -2,14 +2,14 @@ import AppState
 import SwiftUI
 
 extension Application {
-    var theme: StoredState<String> {
-        storedState(initial: "Light", id: "theme")
+    var theme: SyncState<String> {
+        syncState(initial: "Light", id: "theme")
     }
 }
 
 class UserSettings: ObservableObject {
     @AppState(\.username) var username: String
-    @StoredState(\.theme) var theme: String
+    @SyncState(\.theme) var theme: String
 
     var isDarkMode: Bool { theme == "Dark" }
     var isLightMode: Bool { theme == "Light" }
@@ -20,12 +20,6 @@ class UserSettings: ObservableObject {
         } else {
             theme = "Light"
         }
-    }
-}
-
-extension Application {
-    var userSettings: Dependency<UserSettings> {
-        dependency(UserSettings())
     }
 }
 
